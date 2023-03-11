@@ -24,10 +24,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
+    "format": "run lint --fix & prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +50,13 @@
     ]
   },
   "devDependencies": {
-    "dotenv-webpack": "^8.0.1"
+    "dotenv-webpack": "^8.0.1",
+    "eslint-config-prettier": "^8.7.0",
+    "prettier": "^2.8.4",
+    "prop-types": "^15.8.1",
+    "react-app-rewire-alias": "^1.1.7",
+    "react-app-rewired": "^2.2.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "webpack": "^5.76.1"
   }
 }
