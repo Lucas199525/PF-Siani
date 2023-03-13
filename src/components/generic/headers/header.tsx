@@ -12,7 +12,7 @@ import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 
-export default function MenuAppBar() {
+const MenuAppBar = () => {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -92,4 +92,5 @@ export default function MenuAppBar() {
       </AppBar>
     </Box>
   );
-}
+};
+export default MenuAppBar;
