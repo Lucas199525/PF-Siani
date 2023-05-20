@@ -2,7 +2,7 @@ import react from 'react';
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer id="footer">
         <ul className="icons">
           <a href="https://fr.linkedin.com/in/lucas-siani-347653171?trk=public_profile_browsemap_profile-result-card_result-card_full-click">
@@ -24,7 +24,7 @@ const Footer = () => {
           </li>
         </ul>
       </footer>
-    </div>
+    </>
   );
 };
 
