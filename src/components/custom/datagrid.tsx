@@ -1,41 +1,77 @@
 import * as React from 'react';
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  updateUsers,
+  selectUser,
+  selectUsers,
+} from '../../store/listeUsers/ListeUsersSlice';
+import axios from 'axios';
+import DataGrid from './myDatagrid';
 
-const columns: GridColDef[] = [
-  { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'name', headerName: 'Name', width: 130 },
-  { field: 'role', headerName: 'role', width: 130 },
-];
+const base = 'http://localhost:9898';
 
-const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-];
+const DataTable = () => {
+  const [page, setPage] = useState(1);
+  const dispatch = useDispatch();
+  const userListe = [{}];
+  console.log(userListe);
 
-export default function DataTable() {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`${base}/user/`);
+      const dataRec = response.data;
+      dispatch(
+        updateUsers({
+          TUsers: dataRec,
+        })
+      );
+    } catch (err) {
+      console.log('error fetch');
+    }
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const BDatas = userListe;
+  console.log(BDatas);
+  const columns = [
+    {
+      field: 'id',
+      headerName: 'ID',
+      width: 70,
+      render: (BDatas: any) => BDatas.id,
+    },
+    {
+      field: 'name',
+      headerName: 'Name',
+      width: 130,
+      render: (BDatas: any) => `${BDatas.name}`,
+    },
+    {
+      field: 'role',
+      headerName: 'role',
+      width: 130,
+      render: (BDatas: any) => `${BDatas.role}`,
+    },
+  ];
+
   return (
     <div style={{ height: 400, width: '100%' }}>
       <br />
       <DataGrid
-        rows={rows}
+        page={page}
         columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: { page: 0, pageSize: 5 },
-          },
+        datas={BDatas}
+        count={BDatas.length}
+        changePage={function (page: number): void {
+          throw new Error('Function not implemented.');
         }}
-        pageSizeOptions={[5, 10]}
-        checkboxSelection
       />
       <br />
       <br />
     </div>
   );
-}
+};
+export default DataTable;

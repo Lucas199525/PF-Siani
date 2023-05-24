@@ -4,7 +4,7 @@ interface IList {
   TUsers: any;
 }
 
-const getInitialState = () => {
+const getInitialState = (): { value: IList } => {
   return {
     value: {
       TUsers: [],
@@ -13,7 +13,7 @@ const getInitialState = () => {
 };
 
 const UsersSlice = createSlice({
-  name: 'Users',
+  name: 'users',
   initialState: getInitialState(),
   reducers: {
     updateUsers(state, action: PayloadAction<IList>) {
@@ -23,6 +23,9 @@ const UsersSlice = createSlice({
 });
 
 export const { updateUsers } = UsersSlice.actions;
+
+export default UsersSlice;
 export const selectUser = (state: { User: { value: IList } }) =>
   state.User.value;
-export default UsersSlice;
+export const selectUsers = (state: { User: { value: IList } }) =>
+  state.User.value;

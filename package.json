@@ -2,7 +2,9 @@
   "name": "mi-app-ts",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:9898",
   "dependencies": {
+    "@dataesr/react-dsfr": "^3.9.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",

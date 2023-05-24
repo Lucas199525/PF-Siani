@@ -10,8 +10,15 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import UsersSlice, {
+  updateUsers,
+  selectUser,
+  selectUsers,
+} from './listeUsers/ListeUsersSlice';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  users: UsersSlice.reducer,
+});
 
 const persistConfig = {
   key: 'root',
@@ -42,4 +49,8 @@ export const store = configureStore({
 
 setupListeners(store.dispatch);
 
-export const storeActions = {};
+export const storeActions = {
+  updateUsers,
+  selectUser,
+  selectUsers,
+};
