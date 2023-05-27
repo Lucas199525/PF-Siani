@@ -6,7 +6,7 @@ import DataTable from '../components/custom/datagrid';
 const LayoutPrinc = () => {
   return (
     <div>
-      <MenuAppBar />
+      <p>header</p>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -14,7 +14,7 @@ const LayoutPrinc = () => {
         </Routes>
       </div>
       <div>
-        <Footer />
+        <p>footer</p>
       </div>
     </div>
   );
