@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router';
 import { useCallback, useState } from 'react';
-import { Pagination } from '@dataesr/react-dsfr';
+
 interface MyTableMouveProps {
   page: number;
   columns: any;
@@ -51,15 +51,6 @@ const DataGrid: React.FC<MyTableMouveProps> = (props: MyTableMouveProps) => {
           </tbody>
           <caption>Résultat : {props.count}</caption>
         </table>
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'row-reverse' }}>
-        {Math.ceil(props.count / 10) >= page && (
-          <Pagination
-            currentPage={page}
-            pageCount={props.count > 0 ? Math.ceil(props.count / 10) : 1}
-            onClick={onClick}
-          />
-        )}
       </div>
     </>
   );
