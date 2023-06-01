@@ -7,16 +7,10 @@ import DataTable from '../components/custom/datagrid';
 const LayoutPrinc = () => {
   return (
     <div>
-      <Header />
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="users" element={<DataTable />} />
-        </Routes>
-      </div>
-      <div>
-        <p>footer</p>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="users" element={<DataTable />} />
+      </Routes>
     </div>
   );
 };
