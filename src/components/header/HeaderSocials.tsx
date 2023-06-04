@@ -5,10 +5,18 @@ import { BsLinkedin, BsGithub, BsInstagram, BsFacebook } from 'react-icons/bs';
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com" target={'_blank'} rel="noreferrer">
+      <a
+        href="https://www.linkedin.com/in/lucas-siani-347653171"
+        target={'_blank'}
+        rel="noreferrer"
+      >
         <BsLinkedin />
       </a>
-      <a href="https://github.com" target={'_blank'} rel="noreferrer">
+      <a
+        href="https://github.com/Lucas199525?tab=repositories"
+        target={'_blank'}
+        rel="noreferrer"
+      >
         <BsGithub />
       </a>
       <a href="https://instagram.com" target={'_blank'} rel="noreferrer">

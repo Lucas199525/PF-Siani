@@ -8,11 +8,14 @@ const Header = () => {
       <div className="container header__container">
         <h5>Bonjour je m'appel</h5>
         <h1>Lucas SIANI</h1>
-        <h5 className="text-light">Fullstack Developper</h5>
+        <h5>Je suis</h5>
+        <h5 className="text-light">
+          Developpeur Front et Back <br /> et Technicien Informatique
+        </h5>
         <CTA />
         <HeaderSocials />
         <div className="me">
-          <img src={'pro.png'} alt="" />
+          <img src={'probleu.jpeg'} alt="" />
         </div>
         <a href="#contact" className="scroll__down Down">
           Scroll Down
