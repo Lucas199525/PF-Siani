@@ -1,7 +1,6 @@
 {
   "name": "mi-app-ts",
   "version": "0.1.0",
-  "homepage": "http://lucas199525.github.io./Arcom/",
   "private": true,
   "proxy": "http://localhost:9898",
   "dependencies": {
@@ -34,8 +33,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "react-app-rewired build",
-    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
