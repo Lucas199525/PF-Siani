@@ -17,7 +17,8 @@ const Portfolio = () => {
             l'entreprise Helpline en tant que technicien N1/N2 (Prestataire pour
             Crédit Agricole) Principales réalisations : <br />
             • Dépannage utilisateur: software, hardware et système
-            d’exploitation • Gestion des comptes dans L’active directory <br />
+            d’exploitation <br />
+            • Gestion des comptes dans L’active directory <br />
             • Gestion des connexions aux serveurs <br />
             • Système d’exploitation : Windows 10, 8,7 Windows server / linux
             Debian, Ubuntu, kali <br />
@@ -36,7 +37,16 @@ const Portfolio = () => {
             <img src={'logo-blue.png'} />
           </div>
           <h3>Inetum</h3>
-          <p>Developpeur frontend et Backend</p>
+          <p>
+            Developpeur frontend et Backend Je travail actuellement au sein de
+            l'entreprise Inetum en tant que prestataire ayant comme client final
+            le Ministère de l'Europe et des affaires étrangéres <br />
+            Principales réalisations : <br />
+            Developpement d'une application Frontend en React.TS, Redux <br />
+            Developpement d'une application Frontend en React.TS, Redux <br />
+            Developpement d'une application Backend en Java Spring Boot, SQL
+            Server
+          </p>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">

@@ -37,10 +37,14 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            exercitationem iste ex sunt et molestias doloremque quisquam qui
-            modi magnam est dolor perferendis perspiciatis nulla, repellendus
-            excepturi quaerat commodi ratione.
+            je suis actuellement en 2éme année de BTS SIO option SISR par
+            correspondance. En parallèle de mes études je travail dans le
+            domaine de l’informatique, La 2émme année des mes études j’ai
+            travaillé en tant que technicien N1/ N2 pour la banque Crédit
+            Agricole, Maintenant je travail en tant que développeur backend et
+            frontend depuis un an ayant comme client final le Ministère de
+            l'Europe et des affaires étrangéres, je fais également la mise en
+            productions des applications sur des serveur linux, sur Azure, AWS.
           </p>
           <a href="#contact" className="btn btn-primary">
             contact
