@@ -35,7 +35,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill />
               <div>
-                <h4>Spring Boot, Swagger</h4>
+                <h4>Spring Boot </h4>
                 <small></small>
               </div>
             </article>
@@ -50,6 +50,56 @@ const Experience = () => {
               <BsPatchCheckFill />
               <div>
                 <h4>SQLServer</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>Bash</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>Python</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>C#</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>
+                  Outils divers:
+                  <br /> Azure, <br />
+                  Postman, <br />
+                  GitHub, <br />
+                  GitLab, <br />
+                  Jenkins, <br />
+                  Docker
+                </h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>
+                  Environnement de développement : <br />
+                  Java: Intellij Eclipse NetBeans ,<br /> Frontend : Visual
+                  Studio Code,
+                  <br /> C#: Visual Studio,
+                  <br />
+                  Python: Pycharm
+                </h4>
                 <small></small>
               </div>
             </article>
@@ -98,6 +148,37 @@ const Experience = () => {
                 <h4>
                   Gestion des connexions au réseau, Mise en place de server de
                   virtualisation Proxmox
+                </h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>Services Réseau IPv6 et IPv4(DHCP, DNS, VPN, etc...)</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>Routeur et Switch Cisco (Vlan, routage, NAT, ACL)</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>Firewall (PFSENSE )</h4>
+                <small></small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill />
+              <div>
+                <h4>
+                  Hyperviseur Type 1 (VMware ESXi/ESX, HyperV, proxmox), Type 2
+                  (VMware Workstation, VirtualBox)
                 </h4>
                 <small></small>
               </div>
