@@ -9,9 +9,9 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={'helpline.png'} />
+            <img src={'cagip.jpeg'} />
           </div>
-          <h3>Helpline</h3>
+          <h3>CAGIP</h3>
           <p>
             Technicien Informatique N1 / N2 J’ai travaillé au sein de
             l'entreprise Helpline en tant que technicien N1/N2 (Prestataire pour
@@ -28,17 +28,11 @@ const Portfolio = () => {
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={'cagip.jpeg'} />
+            <img src={'lapstech.png'} />
           </div>
-          <h3>CAGIP</h3>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={'logo-blue.png'} />
-          </div>
-          <h3>Inetum</h3>
+          <h3>LAPSTECH</h3>
           <p>
-            Developpeur frontend et Backend Je travail actuellement au sein de
+            Developpeur frontend et Backend J'ai travaillé au sein de
             l'entreprise Inetum en tant que prestataire ayant comme client final
             le Ministère de l'Europe et des affaires étrangéres <br />
             Principales réalisations : <br />
@@ -53,6 +47,32 @@ const Portfolio = () => {
             <img src={'meae.png'} />
           </div>
           <h3>MEAE</h3>
+          <p>
+            Developpeur frontend et Backend J'ai travaillé au sein de
+            l'entreprise Inetum en tant que prestataire ayant comme client final
+            le Ministère de l'Europe et des affaires étrangéres <br />
+            Principales réalisations : <br />
+            Developpement d'une application Frontend en React.TS, Redux <br />
+            Developpement d'une application Frontend en React.TS, Redux <br />
+            Developpement d'une application Backend en Java Spring Boot, SQL
+            Server
+          </p>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={'bnppf.jpg'} />
+          </div>
+          <h3>BNP Paribas</h3>
+          <p>
+            Developpeur frontend et Backend J'ai travaillé au sein de
+            l'entreprise Inetum en tant que prestataire ayant comme client final
+            le Ministère de l'Europe et des affaires étrangéres <br />
+            Principales réalisations : <br />
+            Developpement d'une application Frontend en React.TS, Redux <br />
+            Developpement d'une application Frontend en React.TS, Redux <br />
+            Developpement d'une application Backend en Java Spring Boot, SQL
+            Server
+          </p>
         </article>
       </div>
     </section>
